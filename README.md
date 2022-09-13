@@ -8,7 +8,7 @@ Three EBS Volumes also be created in the same availability zone with the NFS Ser
 
 ![Volume Creation](./Images/volume-add.png)
 
-## Prepare NFS Server
+## 1. Prepare NFS Server
 
 Launch the NFS Server Instance and connect to it via the terminal
 
@@ -145,7 +145,7 @@ Then on the AWS security group, make the necessary rule for the connection
 
 ![MSecurity Rule](./Images/rule.png)
 
-## Configure the Database Server
+## 2. Configure the Database Server
 
 Connect to the Ubuntu Instance already tagged as the Database server
 
@@ -182,7 +182,7 @@ change the bind address to 0.0.0.0
 Then on the AWS EC2, add another inboundrule to allow MYSQL ports
 
 ![Inbound Rule](./Images/mysql-port.png)
-## Prepare the Web Servers
+## 3. Prepare the Web Servers
 
 Connect to one of the Red hat server already tagged Webserver
 
